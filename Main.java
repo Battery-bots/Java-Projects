@@ -37,7 +37,11 @@ public class Main {
         // moves myRobot3 50 units backward
         System.out.println("Robot's new Y coord is: " + myRobot3.moveY("backward", 50));
         myRobot3.status();
-        
+
+        System.out.println();
+
+        System.out.println(myRobot2.hasMoved()); //false
+        System.out.println(myRobot3.hasMoved()); //true
     }
 
 }

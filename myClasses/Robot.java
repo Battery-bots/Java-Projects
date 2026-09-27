@@ -9,6 +9,8 @@ public class Robot{
     private String name;
     private int x;
     private int y;
+    private int xStart;
+    private int yStart;
 
     // Constructors: initializes the instance of a class when called
 
@@ -27,6 +29,8 @@ public class Robot{
         this.name = name;
         this.x = xStart;
         this.y = yStart;
+        this.xStart = xStart;
+        this.yStart = yStart;
 
     }
 
@@ -41,6 +45,7 @@ public class Robot{
         System.out.println("myRobot.getY()");
         System.out.println("myRobot.moveX(direction, units)");
         System.out.println("myRobot.moveY(direction, units)");
+        System.out.println("myRobot.hasMoved()");
 
     }
 
@@ -93,7 +98,7 @@ public class Robot{
 
    // Changes Y position of a robot
    // returns Y pos int
-   public int moveY(String direction, int units){
+    public int moveY(String direction, int units){
 
         if (direction == "forward" || direction == "Forward"){
             this.y += units;
@@ -106,6 +111,14 @@ public class Robot{
         }
 
         return this.y;
+    }
+
+    // returns boolean if Robot object has moved from starting place
+    // calls status function
+    public boolean hasMoved(){
+
+        return (this.yStart != this.y || this.xStart != this.x);
+
    }
 
 }
