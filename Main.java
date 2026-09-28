@@ -40,8 +40,8 @@ public class Main {
 
         System.out.println();
 
-        System.out.println(myRobot2.hasMoved()); //false
-        System.out.println(myRobot3.hasMoved()); //true
+        System.out.println(myRobot2.name + " has moved: " + myRobot2.hasMoved()); //false
+        System.out.println(myRobot3.name + " has moved: " + myRobot3.hasMoved()); //true
     }
 
 }

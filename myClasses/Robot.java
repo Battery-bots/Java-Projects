@@ -6,7 +6,7 @@ public class Robot{
 
     // Private modifier allows variables to be accessed only in the Robot class
     // Cannot be called or modified in any other class
-    private String name;
+    public String name;
     private int x;
     private int y;
     private int xStart;

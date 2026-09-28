@@ -16,7 +16,8 @@ public class TestHi {
             * double - method returns a decimal value
             * boolean - method returns true or false value
      * Parameter list (in the paraenthesis): holds a list of variables that a method can take when called
-            * We do not need to know what "String[] arg" is but those are
+            * We do not need to know what "String[] arg" is
+            * i dont even really know what it is but an array I guess???
             * Parameter lists usually looks like (int num, String name, double price, boolean state)
      * 
      */
