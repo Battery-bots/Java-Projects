@@ -5,10 +5,6 @@
 public class TestHi {
 
     /*
-     * We won't be using this method to program the robot
-     * But it is useful to know the different parts of the method header
-     * That is present in the main method (method that allows the method within the class to run)
-     * 
      * Visibility Modifier (public/private): determines if classes outside the program can access
      * the method or variable
      * 
@@ -22,8 +18,26 @@ public class TestHi {
      * Parameter list (in the paraenthesis): holds a list of variables that a method can take when called
             * We do not need to know what "String[] arg" is but those are
             * Parameter lists usually looks like (int num, String name, double price, boolean state)
+     * 
+     * We will NOT be using main method when programming our robot, but it is useful to know that
+     * main method allows us to run the code in an application
      */
-    public static void main(String[] arg){
+
+    // returns sum of two numbers
+    public static int addNum(int a, int b){
+
+        int sum = a + b;
+        return sum;
+
+    }
+
+    public static void sayHi(){
         System.out.println("Hello World!");
+    }
+
+
+    public static void main(String[] arg){
+        sayHi();
+        System.out.println(addNum(3, 5));
     }
 }
