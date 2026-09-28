@@ -40,6 +40,7 @@ public class Main {
 
         System.out.println();
 
+        // checks if Robot2 and Robot3 has moved
         System.out.println(myRobot2.name + " has moved: " + myRobot2.hasMoved()); //false
         System.out.println(myRobot3.name + " has moved: " + myRobot3.hasMoved()); //true
     }
